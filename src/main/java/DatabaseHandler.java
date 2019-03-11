@@ -94,7 +94,7 @@ public class DatabaseHandler implements DBConfig {
     String update = "INSERT INTO messages(sender,time,message) values(?,?,?)";
     PreparedStatement preparedStatement = connection.prepareStatement(update);
     preparedStatement.setString(1, login);
-    preparedStatement.setString(2, "1000-01-00 " + time);
+    preparedStatement.setString(2, time);
     preparedStatement.setString(3, userMessage);
     preparedStatement.execute();
     System.out.println(preparedStatement.getUpdateCount());

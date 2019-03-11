@@ -62,9 +62,11 @@ public class MethodChecker {
         }
       } else if (strArr[0].equals(NEW_MESSAGE_METHOD)) {
         String login = session.getAttribute("login").toString();
-        String userMessage = message.substring(17);
-        String time = message.substring(8, 16);
+        String userMessage = message.substring(27);
+        String time = message.substring(8, 26);
         databaseHandler.setMessage(connection, login, time, userMessage);
+        //time to show in message
+        time=message.substring(18,26);
         StringBuilder sb = new StringBuilder("");
         sb.append(login + " [");
         sb.append(time + "]:");
