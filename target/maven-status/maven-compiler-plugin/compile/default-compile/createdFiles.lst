@@ -1,0 +1,13 @@
+SessionSaver.class
+client\ChatWindowController.class
+DBConfig.class
+client\ClientHandler.class
+MessageContainer.class
+client\RegistrationFormController.class
+client\Client.class
+ServerHandler.class
+client\ConnectionManager.class
+DatabaseHandler.class
+Server.class
+client\LoginScreenController.class
+MethodChecker.class
