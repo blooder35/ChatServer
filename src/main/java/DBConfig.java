@@ -1,7 +1,16 @@
-public interface DBConfig {
-String dbHost = "localhost";
-String dbPort = "3306";
-String dbUser = "dbUser";
-String dbPass = "1234";
-String dbName = "chat";
+public enum DBConfig {
+    DBHOST("localhost"),
+    DBPORT("3306"),
+    DBUSER("dbUser"),
+    DBPASS("1234"),
+    DBNAME("chat");
+    private String value;
+
+    DBConfig(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return this.value;
+    }
 }
